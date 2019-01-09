@@ -15,11 +15,11 @@ class CreateAccessesTable extends Migration
     {
         Schema::create('accesses', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedInteger('menus_id');
-            $table->unsignedInteger('users_id');
+            $table->unsignedInteger('menu_id');
+            $table->unsignedInteger('user_id');
 
-            $table->foreign('menus_id')->references('id')->on('menus');
-            $table->foreign('users_id')->references('id')->on('users');
+            $table->foreign('menu_id')->references('id')->on('menus');
+            $table->foreign('user_id')->references('id')->on('users');
 
             $table->timestamps();
         });

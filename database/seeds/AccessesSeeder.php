@@ -13,18 +13,18 @@ class AccessesSeeder extends Seeder
     public function run()
     {
       DB::table('accesses')->insert([
-        'menus_id' => 1,
-        'users_id' => 1
+        'menu_id' => 1,
+        'user_id' => 1
       ]);
 
       DB::table('accesses')->insert([
-        'menus_id' => 2,
-        'users_id' => 1
+        'menu_id' => 2,
+        'user_id' => 1
       ]);
 
       DB::table('accesses')->insert([
-        'menus_id' => 3,
-        'users_id' => 1
+        'menu_id' => 3,
+        'user_id' => 1
       ]);
     }
 }
